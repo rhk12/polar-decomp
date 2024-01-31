@@ -32,7 +32,8 @@ xymat=input_material_coords(x,y)
 %
 while isempty(xymat)<1
 % find principal direction spatial coordinates     
-xyspat(1)=shape_functions(xymat,xs(1:4));xyspat(2)=shape_functions(xymat,ys(1:4))
+xyspat(1)=shape_functions(xymat,xs(1:4));
+xyspat(2)=shape_functions(xymat,ys(1:4))
 plot_nodes(1,xymat(1),xymat(2),'blue');
 plot_nodes(1,xyspat(1),xyspat(2),'red')
 % finf deformation gradient
